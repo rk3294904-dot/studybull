@@ -26,7 +26,7 @@ export function Header({ onHome, onLeaderboard, onLogin }: Props) {
           />
           <div className="hidden text-left min-[380px]:block">
             <h1 className="text-base font-bold text-white leading-tight">
-              Quantica Digital
+Study Bull
             </h1>
             <p className="text-[10px] text-slate-400 leading-tight">
               Learning Platform
@@ -60,7 +60,7 @@ export function Header({ onHome, onLeaderboard, onLogin }: Props) {
             </button>
           )}
           <a
-            href="https://t.me/studytrackerpro"
+            href="https://t.me/+cld-t6gvyONhMjU1"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-sky-500 to-blue-500 px-3 py-2 text-xs font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:from-sky-400 hover:to-blue-400 active:scale-95 sm:text-sm"

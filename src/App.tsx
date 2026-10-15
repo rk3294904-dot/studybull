@@ -270,14 +270,13 @@ function App() {
             </div>
 
             <a
-              href="https://t.me/studytrackerpro"
+              href="https://t.me/Contactusquantabot"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-sky-500 to-blue-500 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:from-sky-400 hover:to-blue-400 active:scale-95"
             >
               <Send className="h-4 w-4" />
-              Join Telegram Channel
-            </a>
+Contact Developer            </a>
           </div>
         </div>
       </footer>

@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="surface" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0B2342"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="132" y1="108" x2="386" y2="404" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67E8F9"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <filter id="shadow" x="24" y="24" width="464" height="464" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect x="48" y="48" width="416" height="416" rx="112" fill="url(#surface)" stroke="#334155" stroke-width="4" filter="url(#shadow)"/>
+  <circle cx="256" cy="238" r="126" stroke="url(#ring)" stroke-width="24"/>
+  <path d="M322 326L386 390" stroke="#67E8F9" stroke-width="24" stroke-linecap="round"/>
+  <path d="M205 238C205 209.833 227.833 187 256 187C284.167 187 307 209.833 307 238C307 266.167 284.167 289 256 289" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
+  <path d="M256 187V289" stroke="#F8FAFC" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="256" cy="187" r="11" fill="#67E8F9"/>
+  <circle cx="256" cy="289" r="11" fill="#38BDF8"/>
+  <path d="M150 382H362" stroke="#38BDF8" stroke-width="10" stroke-linecap="round" opacity="0.75"/>
+  <path d="M188 414H324" stroke="#2563EB" stroke-width="8" stroke-linecap="round" opacity="0.55"/>
+</svg>

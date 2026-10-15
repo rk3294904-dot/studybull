@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Private per-user data: batch enrollments (users/{uid}/enrollments) and watched lectures.
+    match /users/{uid}/{document=**} {
+      allow read, write: if request.auth != null && request.auth.uid == uid;
+    }
+
+    // Leaderboard: any signed-in user can read; users can only write their own entry.
+    match /leaderboard/{uid} {
+      allow read: if request.auth != null;
+      allow create, update: if request.auth != null
+        && request.auth.uid == uid
+        && request.resource.data.uid == uid
+        && (!('points' in request.resource.data) || request.resource.data.points is number);
+      allow delete: if false;
+    }
+
+    // Feedback form: anyone can submit, nobody can read it back from the app.
+    match /feedback/{id} {
+      allow create: if request.resource.data.name is string
+        && request.resource.data.feedback is string
+        && request.resource.data.name.size() <= 200
+        && request.resource.data.feedback.size() <= 5000;
+      allow read, update, delete: if false;
+    }
+  }
+}

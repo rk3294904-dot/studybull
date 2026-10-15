@@ -264,7 +264,7 @@ function App() {
                 className="h-8 w-8 rounded-lg"
               />
               <div>
-                <p className="text-sm font-semibold text-white">Quantica Digital</p>
+                <p className="text-sm font-semibold text-white">Study Bull</p>
                 <p className="text-[10px] text-slate-500">Learning Platform</p>
               </div>
             </div>
